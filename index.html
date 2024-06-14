@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia no9</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.css">
+     
+</head>
+<body>
+
+    <center>
+        <h1>Guia número 9</h1>
+        <h1>Diseño de Página web</h1>
+    </center>
+
+    <form id="formulario" onsubmit="return guardar()">
+    
+        <div class="botones_arriba">
+            <button type="button" class="btn btn-primary" id="bo_nuevo" onclick="nuevo()">Nuevo</button>
+            <button type="button" class="btn btn-warning" id="bo_guardar" onclick="guardar()">Guardar</button>
+            <button type="button" class="btn btn-success" id="bo_cancelar" onclick="cancelar()">Cancelar</button>
+            <button type="button" class="btn btn-danger" id="bo_eliminar" onclick="eliminar()">Eliminar</button>
+        </div>
+        <br>
+
+    <div class="input-group mb-3">
+        <input type="text" class="form-control"  placeholder="Ingrese una búsqueda" aria-label="Recipient's username" aria-describedby="basic-addon2" id="filtro">
+        <div class="input-group-append">
+            <button class="btn btn-secondary" type="button" id="btnBuscar" onclick="busqueda()">Buscar</button>
+        </div>
+    </div>
+
+        <hr><br>
+
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Nombre:</label>
+            <input type="text" class="form-control" id="nombre">
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Apellido:</label>
+            <input type="text" class="form-control" id="apellido">
+        </div>
+
+        Carrera:
+        <select class="form-select" size="3" aria-label="size 3 select example" id="opciones">
+            <option value="1">Ingenieria en Sistema</option>
+            <option value="2">Ingenieria en Telematica</option>
+            <option value="3">Ingenieria en Mecatronica</option>
+            <option value="4">Ingenieria en Telecomunicaciones</option>
+          </select>
+        <br>
+
+        Sexo: 
+        <br>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="sexo" value="Masculino" id="sexo1">
+            <label class="form-check-label" for="flexRadioDefault1">Masculino</label>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="sexo" value="Femenino" id="sexo2">
+            <label class="form-check-label" for="flexRadioDefault2">Femenino</label>
+        </div>
+        <br/>
+
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="egresado">
+            <label class="form-check-label" for="flexCheckDefault">¿Egresado?</label>
+        </div>
+
+        <br/>
+        <hr/>
+
+        <div class="botones_abajo">
+            <button type="button" class="btn btn-secondary"  onclick="irAlPrimero()"><<</button>
+            <button type="button" class="btn btn-primary" onclick="retroceder()"><</button>
+            <button type="button" class="btn btn-primary" onclick="avanzar()">></button>
+            <button type="button" class="btn btn-secondary" onclick="irAlUltimo()">>></button>
+        </div>
+        
+    </form>
+    <script type="text/javascript" src="javascript2.js"></script>
+    <br>
+    <center>
+        <h2>Elaborado por: Auxiliadora Vanessa Morales Moreno</h2>
+    </center>
+    
+</body>
+</html>
